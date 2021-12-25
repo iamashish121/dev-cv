@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+.container {
+  background-color: #1A3209;
+  padding: 100px;
+  padding-top: 10px;
+}
+
+.secTitle {
+  color: #fff;
+  font-size: 5vw;
+  font-weight: 500;
+  margin-bottom: 50px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.entry {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.cllgLogo {
+  padding-right: 20px;
+  border-right: 1px solid #1A3209;
+}
+.cllgLogo img {
+  width: 100px;
+  height: 100px;
+}
+
+.description {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2.5vw;
+  font-weight: 400;
+}

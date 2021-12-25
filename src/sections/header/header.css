@@ -1,0 +1,27 @@
+.header {
+  background-color: #E4F4D8;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo {
+  width: 40vw;
+}
+
+.logo img {
+  height: 65px
+}
+
+.listWrapper {
+  max-width: 700px;
+  display: flex;
+  list-style: none;
+  width: 60vw;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: #555;  
+}

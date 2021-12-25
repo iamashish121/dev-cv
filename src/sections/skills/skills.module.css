@@ -1,0 +1,13 @@
+.container {
+  background-color: #b3e6cc;
+  padding: 100px;
+  padding-top: 10px;
+}
+
+.secTitle {
+  color: #1A3209;
+  font-size: 5vw;
+  font-weight: 500;
+  margin-bottom: 50px;
+  font-family: 'Nunito', sans-serif;
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+.container {
+  background-color: #40826D;
+  padding: 100px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentWrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.photo {
+  height: 30vh;
+  margin-right: 10vw;
+  border-radius: 15vw;
+  border: 5px solid #fff;
+}
+
+.secTitle {
+  color: #fff;
+  font-size: 4vw;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.description {
+  color: #EBF7E3;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+.iconCommon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.google {
+  color: #fff;
+  background-color: #DB4437;
+}
+
+.google:hover {
+  color: #DB4437;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.linkedin {
+  color: #fff;
+  background-color: #0072b1;
+}
+
+.linkedin:hover {
+  color: #0072b1;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.twitter {
+  color: #fff;
+  background-color: #1DA1F2;
+}
+
+.twitter:hover {
+  color: #1DA1F2;
+  background-color: #fff;
+  transition: 0.3s;
+}
