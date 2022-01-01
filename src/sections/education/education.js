@@ -2,8 +2,9 @@ import Styles from './education.module.css';
 import IITklogo from  '../../images/iitk-logo.png';
 import ARSDlogo from  '../../images/logo-arsd.png';
 
-const Education = () => {
+const Education = props => {
 
+  const {educationProps = {}} = props
   const data = [
     {
       title: "Indian Institute of Technology, Kanpur",
@@ -16,9 +17,9 @@ const Education = () => {
       period:"2013 - 2017"
     }
   ];
-  const content = data.map((entry,index) => {
+  const content = educationProps.educationData.map((entry,index) => {
     return (
-      <div className={Styles.entry}>
+      <div className={Styles.entry} style={{'background-color': educationProps.style.entryBgColor}}>
         <div className={Styles.cllgLogo}>
           <img src={index === 1 ? ARSDlogo : IITklogo}/>
         </div>
@@ -38,8 +39,8 @@ const Education = () => {
   });
 
   return (
-    <div className={Styles.container} id='education'>
-      <div className={Styles.secTitle}>
+    <div className={Styles.container} id='education' style={{'background-color': educationProps.style.bgColor}}>
+      <div className={Styles.secTitle} style={{...educationProps.style.sectionTitle}}>
         Education
       </div>
       {content}

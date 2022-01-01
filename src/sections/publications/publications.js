@@ -1,25 +1,9 @@
 import Styles from './publications.module.css';
 
-const Publications = () => {
+const Publications = props => {
+  const {publicationsProps = {}} = props
 
-  const data = [{
-    title: "MAP: A Visual Analytics System for Job Monitoring and Analysis",
-    conference: "IEEE International Conference on Cluster Computing",
-    year: 2020,
-    link: 'https://ieeexplore.ieee.org/document/9229613'
-  }, {
-    title: "An improved content based collaborative filtering algorithm for movie recommendations",
-    conference: "Tenth International Conference on Contemporary Computing (IC3)",
-    year: 2017,
-    link: 'https://ieeexplore.ieee.org/document/8284357'
-  }, {
-    title: "A survey of methods of collaborative filtering techniques",
-    conference: "International Conference on Inventive Systems and Control (ICISC)",
-    year: 2017,
-    link: 'https://ieeexplore.ieee.org/document/8068603'
-  }];
-
-  const content = data.map((paper, index) => {
+  const content = publicationsProps.publicationsData.map((paper, index) => {
     return (
       <div className={Styles.paper} >
         <div className={Styles.title}>
@@ -34,11 +18,11 @@ const Publications = () => {
     );
   });
   return (
-    <div className={Styles.container} id='publications'>
-      <div className={Styles.secTitle}>
+    <div className={Styles.container} id='publications' style={{'background-color': publicationsProps.style.bgColor}}>
+      <div className={Styles.secTitle} style={{...publicationsProps.style.sectionTitle}}>
         Publications
       </div>
-      <div className={Styles.wrapper} >
+      <div className={Styles.wrapper} style={{'background-color': publicationsProps.style.wrapperBgColor}}>
         {content}
       </div>
     </div>

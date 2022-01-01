@@ -1,0 +1,189 @@
+{
+  "components": [
+    {
+      "type": "header",
+      "data": {
+        "logoURI": "",
+        "menuItems": [
+          {
+            "value": "Education",
+            "path": "#education"
+          },
+          {
+            "value": "Experiance",
+            "path": "#experiance"
+          },
+          {
+            "value": "Publications",
+            "path": "#publications"
+          },
+          {
+            "value": "Skills",
+            "path": "#skills"
+          },
+          {
+            "value": "Contact",
+            "path": "#contact"
+          }
+        ],
+        "style": {
+          "bgColor": "#E4F4D8",
+          "height": "65px",
+          "logoImageHeight": "65px",
+          "textColor": "#555"
+        }
+      }
+    },
+    {
+      "type": "landing",
+      "data": {
+        "heroImage": "",
+        "welcomeText1": "Hi All, I am Ashish ✌️ ",
+        "welcomeText2": "A frontend engineer having experiance in React, React Native, node.js and webpack.",
+        "buttonText": "Resume ?",
+        "style": {
+          "bgImage": "linear-gradient(90deg, #496D1D, #EEF8E3)",
+          "titleFontSize": "3vw",
+          "subtitleFontSize": "2vw",
+          "introTextColor": "#fff",
+          "buttonTextColor": "#fff"
+        }
+      }
+    },
+    {
+      "type": "education",
+      "data": {
+        "educationData": [
+          {
+            "title": "Indian Institute of Technology, Kanpur",
+            "degree": "M.tech, Computer Science and Engineering",
+            "period": "2018 - 2020"
+          },
+          {
+            "title": "Atma Ram Sanatan Dharam College",
+            "degree": "B.tech, Computer Science and Engineering",
+            "period": "2013 - 2017"
+          }
+        ],
+        "style": {
+          "bgColor": "#1A3209",
+          "sectionTitle": {
+            "color": "#fff",
+            "fontSize": "5vw",
+            "fontWeight": "300"
+          },
+          "entryBgColor": "#fff"
+        }
+      }
+    },
+    {
+      "type": "experiance",
+      "data": {
+        "experianceData": [
+          {
+            "company": "Myntra",
+            "role": "Software Engineer",
+            "period": "2020 - Present"
+          }
+        ],
+        "style": {
+          "bgColor": "#577A3E",
+          "sectionTitle": {
+            "color": "#fff",
+            "fontSize": "5vw",
+            "fontWeight": "300"
+          },
+          "entryBgColor": "#fff"
+        }
+      }
+    },
+    {
+      "type": "skills",
+      "data": {
+        "skillsData": [
+          {
+            "type": "React",
+            "level": 85
+          },
+          {
+            "type": "Javascript",
+            "level": 75
+          },
+          {
+            "type": "HTML",
+            "level": 80
+          },
+          {
+            "type": "Node.js",
+            "level": 40
+          }
+        ],
+        "barsColorsData": {
+          "bar": "#339966",
+          "title": {
+            "text": "#fff",
+            "background": "#0d261a"
+          }
+        },
+        "style": {
+          "bgColor": "#b3e6cc",
+          "sectionTitle": {
+            "color": "#1A3209",
+            "fontSize": "5vw",
+            "fontWeight": "500"
+          }
+        }
+      }
+    },
+    {
+      "type": "publications",
+      "data": {
+        "publicationsData": [
+          {
+            "title": "MAP: A Visual Analytics System for Job Monitoring and Analysis",
+            "conference": "IEEE International Conference on Cluster Computing",
+            "year": 2020,
+            "link": "https://ieeexplore.ieee.org/document/9229613"
+          },
+          {
+            "title": "An improved content based collaborative filtering algorithm for movie recommendations",
+            "conference": "Tenth International Conference on Contemporary Computing (IC3)",
+            "year": 2017,
+            "link": "https://ieeexplore.ieee.org/document/8284357"
+          },
+          {
+            "title": "A survey of methods of collaborative filtering techniques",
+            "conference": "International Conference on Inventive Systems and Control (ICISC)",
+            "year": 2017,
+            "link": "https://ieeexplore.ieee.org/document/8068603"
+          }
+        ],
+        "style": {
+          "bgColor": "#EBF7E3",
+          "sectionTitle": {
+            "color": "#1A3209",
+            "fontSize": "5vw",
+            "fontWeight": "500"
+          },
+          "wrapperBgColor": "#fff"
+        }
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "gmail": "ashishlotus@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/iamashish121/",
+        "twitter": "https://twitter.com/iamashish121",
+        "style": {
+          "bgColor": "#40826D",
+          "sectionTitle": {
+            "color": "#fff",
+            "fontSize": "4vw",
+            "fontWeight": "400"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,42 +1,15 @@
 import SkillBar from 'react-skillbars';
 import Styles from './skills.module.css';
 
-const Skills = () => {
-
-  const skills = [
-    {
-      "type": "React",
-      "level": 85
-    },
-    {
-      "type": "Javascript",
-      "level": 75
-    },
-    {
-      "type": "HTML",
-      "level": 80
-    },
-    {
-      "type": "Node.js",
-      "level": 40
-    },
-
-  ];
-
-  const colors = {
-    "bar": "#339966",
-    "title": {
-      "text": "#fff",
-      "background": "#0d261a"
-    }
-  }
+const Skills = props => {
+  const {skillsProps = {}} = props
 
   return (
-    <div className={Styles.container} id='skills'>
-      <div className={Styles.secTitle}>
+    <div className={Styles.container} id='skills' style={{'background-color': skillsProps.style.bgColor}}>
+      <div className={Styles.secTitle} style={{...skillsProps.style.sectionTitle}}>
         Skills
       </div>
-      <SkillBar skills={skills} colors={colors}/>
+      <SkillBar skills={skillsProps.skillsData} colors={skillsProps.barsColorsData}/>
     </div>
   );
 }

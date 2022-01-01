@@ -2,8 +2,9 @@ import Styles from './experiances.module.css';
 import IITklogo from  '../../images/iitk-logo.png';
 import Myntralogo from  '../../images/Myntra_logo_2.png';
 
-const Experiance = () => {
+const Experiance = props => {
 
+  const {experianceProps = {}} = props
   const data = [
     {
       company: "Myntra",
@@ -12,9 +13,9 @@ const Experiance = () => {
 
     }
   ];
-  const content = data.map((entry,index) => {
+  const content = experianceProps.experianceData.map((entry,index) => {
     return (
-      <div className={Styles.entry}>
+      <div className={Styles.entry} style={{'background-color': experianceProps.style.entryBgColor}}>
         <div className={Styles.logo}>
           <img src={Myntralogo}/>
         </div>
@@ -31,8 +32,8 @@ const Experiance = () => {
   });
 
   return (
-    <div className={Styles.container} id='experiance'>
-      <div className={Styles.secTitle}>
+    <div className={Styles.container} id='experiance' style={{'background-color': experianceProps.style.bgColor}}>
+      <div className={Styles.secTitle} style={{...experianceProps.style.sectionTitle}}>
         Experiance
       </div>
       <div className={Styles.wrapper}>

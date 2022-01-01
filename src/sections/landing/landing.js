@@ -1,18 +1,19 @@
 import './landing.css';
 import HeroImageSVG from  '../../images/heroImage.svg';
-const Landing = () => {
+const Landing = props => {
 
+  const {landingProps = {}} = props;
   return (
-    <div className='landingWrapper' >
+    <div className='landingWrapper' style={{'background-image': landingProps.style.bgImage}}>
       <div className='intro'>
-        <div className='introText'>
-          <div className='textBig'>Hi All, I am Ashish ✌️ </div><br/>
-          A frontend engineer having experiance in React, React Native, node.js and webpack.
+        <div className='introText' style={{'font-size': landingProps.style.subtitleFontSize, 'color': landingProps.style.introTextColor}}>
+          <div className='textBig' style={{'font-size': landingProps.style.titleFontSize}}>{landingProps.welcomeText1}</div><br/>
+          {landingProps.welcomeText2}
         </div>
-        <a href="#" className='button'>Resume ?</a>
+        <a href="#" className='button' style={{'color': landingProps.style.buttonTextColor}}>{landingProps.buttonText}</a>
       </div>
       <div className='photo'>
-        <img src={HeroImageSVG} />
+        <img src={ landingProps.heroImage || HeroImageSVG} />
       </div>
     </div>
   );

@@ -4,13 +4,13 @@ import Twitter from './twitter';
 import Gmail from './gmail';
 import MyPhoto from  '../../images/myPhoto.jpg';
 
-const Contact = () => {
-
+const Contact = props => {
+  const {contactProps = {}} = props
   // const descriptionText = "Have a cool idea ? Want suggestions on your current project ? Or just wanna chat on latest technologies. Feel free to reach out.";
   return (
-    <div className={Styles.container} id='contact'>
+    <div className={Styles.container} id='contact' style={{'background-color': contactProps.style.bgColor}}>
       <div className={Styles.contentWrapper}>
-        <div className={Styles.secTitle}>
+        <div className={Styles.secTitle} style={{...contactProps.style.sectionTitle}}>
           React out to me!
         </div>
         <div className={Styles.description}>
@@ -19,9 +19,9 @@ const Contact = () => {
           Or just wanna chat on latest technologies. Feel free to reach out.
         </div>
         <div className={Styles.social}>
-          <Gmail url='mailto:ashishltus@gmail.com' />
-          <Linkedin url='https://www.linkedin.com/in/iamashish121/'/>
-          <Twitter url='https://twitter.com/iamashish121'/>
+          {contactProps.gmail && <Gmail url={`mailto:${contactProps.gmail}`} />}
+          {contactProps.linkedin && <Linkedin url={contactProps.linkedin}/>}
+          {contactProps.twitter && <Twitter url={contactProps.twitter}/>}
         </div>
       </div>
       <div>

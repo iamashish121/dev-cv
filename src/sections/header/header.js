@@ -1,37 +1,21 @@
 import './header.css';
 import logo from  '../../images/logo.jpg'
-const header = () => {
+const header = props => {
+  const {headerProps : { logoURI = '', menuItems = [], style = {} }} = props
+
   return (
-    <div className='header'>
+    <div className='header' style={{'background-color': style.bgColor, height: style.height}}>
         <div className='logo'>
-          <img src={logo} />
+          <img src={logoURI || logo} style={{height: style.logoImageHeight}}/>
         </div>
         <ul className='listWrapper'>
-          <li>
-            <a href='#education'>
-              Education
-            </a>
-          </li>
-          <li>
-            <a href='#experiance'>
-              Experiance
-            </a>
-          </li>
-          <li>
-            <a href='#publications'>
-              Publications
-            </a>
-          </li>
-          <li>
-            <a href='#skills'>
-              Skills
-            </a>
-          </li>
-          <li>
-            <a href='#contact'>
-              Contact
-            </a>
-          </li>
+          {menuItems.map( item => (
+            <li>
+              <a href={item.path} style={{color: style.textColor}}>
+                {item.value}
+              </a>
+            </li>
+          ) )}
         </ul>
     </div>
   );
