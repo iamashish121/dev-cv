@@ -1,6 +1,4 @@
 import Styles from './education.module.css';
-import IITklogo from  '../../images/iitk-logo.png';
-import ARSDlogo from  '../../images/logo-arsd.png';
 
 const Education = props => {
 

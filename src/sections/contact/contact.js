@@ -2,7 +2,6 @@ import Styles from './contact.module.css';
 import Linkedin from './linkedin';
 import Twitter from './twitter';
 import Gmail from './gmail';
-import MyPhoto from  '../../images/myPhoto.jpg';
 
 const Contact = props => {
   const {contactProps = {}} = props

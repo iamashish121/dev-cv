@@ -1,11 +1,9 @@
 import Styles from './experiances.module.css';
-import IITklogo from  '../../images/iitk-logo.png';
-import Myntralogo from  '../../images/Myntra_logo_2.png';
 
 const Experiance = props => {
 
   const {experianceProps = {}} = props
-  
+
   const content = experianceProps.experianceData.map((entry,index) => {
     return (
       <div className={Styles.entry} style={{'background-color': experianceProps.style.entryBgColor}}>
