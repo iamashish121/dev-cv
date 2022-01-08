@@ -3,7 +3,7 @@
     {
       "type": "header",
       "data": {
-        "logoURI": "",
+        "logoURI": "https://ik.imagekit.io/devcvV1/dev-cv/logo_jdye-zUbO.jpg?updatedAt=1641637210666",
         "menuItems": [
           {
             "value": "Education",
@@ -37,7 +37,7 @@
     {
       "type": "landing",
       "data": {
-        "heroImage": "",
+        "heroImage": "https://ik.imagekit.io/devcvV1/dev-cv/heroImage_ttBIwAl5I.svg?updatedAt=1641637209938",
         "welcomeText1": "Hi All, I am Ashish ✌️ ",
         "welcomeText2": "A frontend engineer having experiance in React, React Native, node.js and webpack.",
         "buttonText": "Resume ?",
@@ -55,11 +55,13 @@
       "data": {
         "educationData": [
           {
+            "logoURI": "https://ik.imagekit.io/devcvV1/dev-cv/iitk-logo_etL8SrCEktA.png?updatedAt=1641637210305",
             "title": "Indian Institute of Technology, Kanpur",
             "degree": "M.tech, Computer Science and Engineering",
             "period": "2018 - 2020"
           },
           {
+            "logoURI": "https://ik.imagekit.io/devcvV1/dev-cv/logo-arsd_Lv3pmy5tcMz.png?updatedAt=1641637211802",
             "title": "Atma Ram Sanatan Dharam College",
             "degree": "B.tech, Computer Science and Engineering",
             "period": "2013 - 2017"
@@ -81,6 +83,7 @@
       "data": {
         "experianceData": [
           {
+            "logoURI": "https://ik.imagekit.io/devcvV1/dev-cv/Myntra_logo_2_S07JQ2jwp.png?updatedAt=1641637210979",
             "company": "Myntra",
             "role": "Software Engineer",
             "period": "2020 - Present"
@@ -172,6 +175,7 @@
     {
       "type": "contact",
       "data": {
+        "displayImage": "https://ik.imagekit.io/devcvV1/dev-cv/myPhoto_V3dmX6KvS.jpg?updatedAt=1641637211657",
         "gmail": "ashishlotus@gmail.com",
         "linkedin": "https://www.linkedin.com/in/iamashish121/",
         "twitter": "https://twitter.com/iamashish121",

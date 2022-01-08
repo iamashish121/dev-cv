@@ -5,19 +5,12 @@ import Myntralogo from  '../../images/Myntra_logo_2.png';
 const Experiance = props => {
 
   const {experianceProps = {}} = props
-  const data = [
-    {
-      company: "Myntra",
-      role: "Software Engineer",
-      period:"2020 - Present"
-
-    }
-  ];
+  
   const content = experianceProps.experianceData.map((entry,index) => {
     return (
       <div className={Styles.entry} style={{'background-color': experianceProps.style.entryBgColor}}>
         <div className={Styles.logo}>
-          <img src={Myntralogo}/>
+          <img src={entry.logoURI}/>
         </div>
         <div className={Styles.description}>
           <div className={Styles.role} >

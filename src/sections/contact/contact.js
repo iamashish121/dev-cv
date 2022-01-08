@@ -25,7 +25,7 @@ const Contact = props => {
         </div>
       </div>
       <div>
-        <img src={MyPhoto} className={Styles.photo}/>
+        <img src={contactProps.displayImage} className={Styles.photo}/>
       </div>
     </div>
   );

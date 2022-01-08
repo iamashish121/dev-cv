@@ -5,23 +5,12 @@ import ARSDlogo from  '../../images/logo-arsd.png';
 const Education = props => {
 
   const {educationProps = {}} = props
-  const data = [
-    {
-      title: "Indian Institute of Technology, Kanpur",
-      degree:"M.tech, Computer Science and Engineering",
-      period:"2018 - 2020"
-    },
-    {
-      title: "Atma Ram Sanatan Dharam College",
-      degree:"B.tech, Computer Science and Engineering",
-      period:"2013 - 2017"
-    }
-  ];
+
   const content = educationProps.educationData.map((entry,index) => {
     return (
       <div className={Styles.entry} style={{'background-color': educationProps.style.entryBgColor}}>
         <div className={Styles.cllgLogo}>
-          <img src={index === 1 ? ARSDlogo : IITklogo}/>
+          <img src={entry.logoURI}/>
         </div>
         <div className={Styles.description}>
           <div className={Styles.title}>
