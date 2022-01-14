@@ -37,14 +37,14 @@
     {
       "type": "landing",
       "data": {
-        "heroImage": "https://ik.imagekit.io/devcvV1/dev-cv/heroImage_ttBIwAl5I.svg?updatedAt=1641637209938",
+        "heroImage": "https://ik.imagekit.io/devcvV1/dev-cv/heroImage2_1__V1t0pDTOl.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1642150334890",
         "welcomeText1": "Hi All, I am Ashish ✌️ ",
         "welcomeText2": "A frontend engineer having experiance in React, React Native, node.js and webpack.",
         "buttonText": "Resume ?",
         "style": {
           "bgImage": "linear-gradient(90deg, #496D1D, #EEF8E3)",
-          "titleFontSize": "3vw",
-          "subtitleFontSize": "2vw",
+          "titleFontSize": "max(3vw,21px)",
+          "subtitleFontSize": "max(2vw,16px)",
           "introTextColor": "#fff",
           "buttonTextColor": "#fff"
         }
@@ -71,7 +71,7 @@
           "bgColor": "#1A3209",
           "sectionTitle": {
             "color": "#fff",
-            "fontSize": "5vw",
+            "fontSize": "max(5vw, 30px)",
             "fontWeight": "300"
           },
           "entryBgColor": "#fff"
@@ -93,7 +93,7 @@
           "bgColor": "#577A3E",
           "sectionTitle": {
             "color": "#fff",
-            "fontSize": "5vw",
+            "fontSize": "max(5vw, 30px)",
             "fontWeight": "300"
           },
           "entryBgColor": "#fff"
@@ -132,7 +132,7 @@
           "bgColor": "#b3e6cc",
           "sectionTitle": {
             "color": "#1A3209",
-            "fontSize": "5vw",
+            "fontSize": "max(5vw, 30px)",
             "fontWeight": "500"
           }
         }
@@ -165,7 +165,7 @@
           "bgColor": "#EBF7E3",
           "sectionTitle": {
             "color": "#1A3209",
-            "fontSize": "5vw",
+            "fontSize": "max(5vw, 30px)",
             "fontWeight": "500"
           },
           "wrapperBgColor": "#fff"
@@ -183,7 +183,7 @@
           "bgColor": "#40826D",
           "sectionTitle": {
             "color": "#fff",
-            "fontSize": "4vw",
+            "fontSize": "max(4vw,30px)",
             "fontWeight": "400"
           }
         }

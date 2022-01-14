@@ -11,27 +11,14 @@ import configDataJSON from './configData.json';
 const renderComponents = () => {
   return configDataJSON.components.map( (comp, i) => {
     switch (comp.type) {
-      case 'header':
-        return <Header headerProps={comp.data}/>
-        break;
-      case 'landing':
-        return <Landing landingProps={comp.data}/>
-        break;
-      case 'education':
-        return <Education educationProps={comp.data}/>
-        break;
-      case 'experiance':
-        return <Experiance experianceProps={comp.data}/>
-        break;
-      case 'skills':
-        return <Skills skillsProps={comp.data}/>
-        break;
-      case 'publications':
-        return <Publications publicationsProps={comp.data}/>
-        break;
-      case 'contact':
-        return <Contact contactProps={comp.data}/>
-        break;
+      case 'header': return <Header headerProps={comp.data} key={i}/>
+      case 'landing': return <Landing landingProps={comp.data} key={i}/>
+      case 'education': return <Education educationProps={comp.data} key={i}/>
+      case 'experiance': return <Experiance experianceProps={comp.data} key={i}/>
+      case 'skills': return <Skills skillsProps={comp.data} key={i}/>
+      case 'publications': return <Publications publicationsProps={comp.data} key={i}/>
+      case 'contact': return <Contact contactProps={comp.data} key={i}/>
+      default: return null
     }
   } )
 }

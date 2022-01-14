@@ -6,8 +6,17 @@
 
 .secTitle {
   color: #1A3209;
-  font-size: 5vw;
+  font-size: max(5vw, 30px);
   font-weight: 500;
   margin-bottom: 50px;
   font-family: 'Nunito', sans-serif;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 10px;
+  }
+  .secTitle {
+    margin-bottom: 20px;
+  }
 }

@@ -5,7 +5,7 @@ const Publications = props => {
 
   const content = publicationsProps.publicationsData.map((paper, index) => {
     return (
-      <div className={Styles.paper} >
+      <div className={Styles.paper} key={index}>
         <div className={Styles.title}>
           {paper.title}
         </div>
@@ -18,11 +18,11 @@ const Publications = props => {
     );
   });
   return (
-    <div className={Styles.container} id='publications' style={{'background-color': publicationsProps.style.bgColor}}>
+    <div className={Styles.container} id='publications' style={{'backgroundColor': publicationsProps.style.bgColor}}>
       <div className={Styles.secTitle} style={{...publicationsProps.style.sectionTitle}}>
         Publications
       </div>
-      <div className={Styles.wrapper} style={{'background-color': publicationsProps.style.wrapperBgColor}}>
+      <div className={Styles.wrapper} style={{'backgroundColor': publicationsProps.style.wrapperBgColor}}>
         {content}
       </div>
     </div>

@@ -6,9 +6,9 @@ const Education = props => {
 
   const content = educationProps.educationData.map((entry,index) => {
     return (
-      <div className={Styles.entry} style={{'background-color': educationProps.style.entryBgColor}}>
+      <div className={Styles.entry} style={{'backgroundColor': educationProps.style.entryBgColor}} key={index}>
         <div className={Styles.cllgLogo}>
-          <img src={entry.logoURI}/>
+          <img src={entry.logoURI} alt={'college_logo'}/>
         </div>
         <div className={Styles.description}>
           <div className={Styles.title}>
@@ -26,7 +26,7 @@ const Education = props => {
   });
 
   return (
-    <div className={Styles.container} id='education' style={{'background-color': educationProps.style.bgColor}}>
+    <div className={Styles.container} id='education' style={{'backgroundColor': educationProps.style.bgColor}}>
       <div className={Styles.secTitle} style={{...educationProps.style.sectionTitle}}>
         Education
       </div>

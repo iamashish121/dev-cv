@@ -7,7 +7,7 @@ const Contact = props => {
   const {contactProps = {}} = props
   // const descriptionText = "Have a cool idea ? Want suggestions on your current project ? Or just wanna chat on latest technologies. Feel free to reach out.";
   return (
-    <div className={Styles.container} id='contact' style={{'background-color': contactProps.style.bgColor}}>
+    <div className={Styles.container} id='contact' style={{'backgroundColor': contactProps.style.bgColor}}>
       <div className={Styles.contentWrapper}>
         <div className={Styles.secTitle} style={{...contactProps.style.sectionTitle}}>
           React out to me!
@@ -24,7 +24,7 @@ const Contact = props => {
         </div>
       </div>
       <div>
-        <img src={contactProps.displayImage} className={Styles.photo}/>
+        <img src={contactProps.displayImage} className={Styles.photo} alt={'Dev_photo'}/>
       </div>
     </div>
   );

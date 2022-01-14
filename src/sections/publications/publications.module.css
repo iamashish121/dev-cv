@@ -8,7 +8,7 @@
 
 .secTitle {
   color: #1A3209;
-  font-size: 5vw;
+  font-size: max(5vw, 30px);
   font-weight: 500;
   margin-bottom: 50px;
   font-family: 'Nunito', sans-serif;
@@ -45,4 +45,30 @@
   font-weight: 300;
   text-decoration: none;
   color: #577A3E;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 10px;
+  }
+  .secTitle {
+    margin-bottom: 20px;
+  }
+  .wrapper {
+    padding: 0px 20px;
+    padding-bottom: 30px;
+  }
+  .paper {
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .conference {
+    font-size: 15px;
+  }
+  .link {
+    font-size: 15px;
+  }
 }

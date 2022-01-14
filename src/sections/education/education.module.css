@@ -8,7 +8,7 @@
 
 .secTitle {
   color: #fff;
-  font-size: 5vw;
+  font-size: max(5vw, 30px);
   font-weight: 500;
   margin-bottom: 50px;
   font-family: 'Nunito', sans-serif;
@@ -39,6 +39,27 @@
 }
 
 .title {
-  font-size: 2.5vw;
+  font-size: max(2.5vw, 17px);
   font-weight: 400;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 10px;
+  }
+  .secTitle {
+    margin-bottom: 20px;
+  }
+  .cllgLogo {
+    padding-right: 0px;
+    border: 0px
+  }
+  .cllgLogo img {
+    width: 50px;
+    height: 50px;
+  }
+  .description {
+    padding-left: 10px;
+    font-size: 15px;
+  }
 }

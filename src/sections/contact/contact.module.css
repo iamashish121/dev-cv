@@ -22,7 +22,7 @@
 
 .secTitle {
   color: #fff;
-  font-size: 4vw;
+  font-size: max(4vw,30px);
   font-weight: 400;
   margin-bottom: 20px;
   font-family: 'Nunito', sans-serif;
@@ -80,4 +80,17 @@
   color: #1DA1F2;
   background-color: #fff;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 10px;
+  }
+
+  .photo {
+    margin-right: 1vw;
+  }
+  .description {
+    font-size: 18px;
+  }
 }

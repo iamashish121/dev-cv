@@ -5,7 +5,7 @@ const Skills = props => {
   const {skillsProps = {}} = props
 
   return (
-    <div className={Styles.container} id='skills' style={{'background-color': skillsProps.style.bgColor}}>
+    <div className={Styles.container} id='skills' style={{'backgroundColor': skillsProps.style.bgColor}}>
       <div className={Styles.secTitle} style={{...skillsProps.style.sectionTitle}}>
         Skills
       </div>

@@ -5,25 +5,45 @@ const Experiance = props => {
   const {experianceProps = {}} = props
 
   const content = experianceProps.experianceData.map((entry,index) => {
-    return (
-      <div className={Styles.entry} style={{'background-color': experianceProps.style.entryBgColor}}>
-        <div className={Styles.logo}>
-          <img src={entry.logoURI}/>
-        </div>
-        <div className={Styles.description}>
-          <div className={Styles.role} >
-            {entry.role}
+    if (window.matchMedia("(max-width: 750px)").matches) {
+      return (
+        <div className={Styles.entry} style={{'backgroundColor': experianceProps.style.entryBgColor}} key={index}>
+          <div className={Styles.headline}>
+            <img src={entry.logoURI} alt={'company_logo'}/>
+            <div className={Styles.role} >
+              {entry.role}
+              <div className={Styles.period} >
+                {entry.period}
+              </div>
+            </div>
           </div>
-          <div className={Styles.period} >
-            {entry.period}
+          <div className={Styles.description}>
+
           </div>
         </div>
-      </div>
-    );
+      );
+    }
+    else {
+      return (
+        <div className={Styles.entry} style={{'backgroundColor': experianceProps.style.entryBgColor}} key={index}>
+          <div className={Styles.logo}>
+            <img src={entry.logoURI} alt={'company_logo'}/>
+          </div>
+          <div className={Styles.description}>
+            <div className={Styles.role} >
+              {entry.role}
+            </div>
+            <div className={Styles.period} >
+              {entry.period}
+            </div>
+          </div>
+        </div>
+      );
+    }
   });
 
   return (
-    <div className={Styles.container} id='experiance' style={{'background-color': experianceProps.style.bgColor}}>
+    <div className={Styles.container} id='experiance' style={{'backgroundColor': experianceProps.style.bgColor}}>
       <div className={Styles.secTitle} style={{...experianceProps.style.sectionTitle}}>
         Experiance
       </div>
