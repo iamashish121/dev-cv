@@ -4,7 +4,7 @@ const Landing = props => {
 
   const {landingProps = {}} = props;
   return (
-    <div className='landingWrapper' style={{'backgroundImage': landingProps.style.bgImage}}>
+    <div className='landingWrapper' style={{'backgroundImage': landingProps.style.bgImage, 'paddingTop': landingProps.style.headerHeight}}>
       <div className='intro'>
         <div className='introText' style={{'fontSize': landingProps.style.subtitleFontSize, 'color': landingProps.style.introTextColor}}>
           <div className='textBig' style={{'fontSize': landingProps.style.titleFontSize}}>{landingProps.welcomeText1}</div><br/>

@@ -7,7 +7,6 @@ const header = props => {
   const toggleMenu = () => {
     if (window.matchMedia("(max-width: 750px)").matches) {
       const ele = document.getElementById('verticalLinks');
-      console.info(ele.style.opacity, typeof ele.style.opacity);
       if (ele.style.opacity === '0' || ele.style.opacity === '') {
         ele.style.opacity = '1';
       } else {
@@ -26,7 +25,7 @@ const header = props => {
   }
 
   return (
-    <>
+    <div>
       <div className='header' style={{backgroundColor: style.bgColor, height: style.height}}>
           <div className='logo'>
             <img src={logoURI || logo} style={{height: style.logoImageHeight}} alt={'logo'}/>
@@ -36,15 +35,14 @@ const header = props => {
             <HiOutlineMenuAlt3 className='menu-icon'/>
           </ul>
       </div>
-      <div id='verticalLinks' className='verticalLinks'>
+      <div id='verticalLinks' className='verticalLinks' style={{'paddingTop': style.height}}>
         {menuItems.map( (item, index) => (
             <a href={item.path} style={{color: style.textColor}} onClick={() => document.getElementById('verticalLinks').style.opacity='0'} key={index}>
               {item.value}
             </a>
         ) )}
       </div>
-
-    </>
+    </div>
   );
 }
 

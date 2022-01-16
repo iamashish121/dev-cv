@@ -13,8 +13,26 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>DEV CV</title>
   </head>
-  <body>
+  <body onload="myFunction()">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      function myFunction() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                var element = document.querySelector(this.getAttribute('href'));
+                var headerOffset = 65;
+                var elementPosition = element.getBoundingClientRect().top;
+                var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            });
+        });
+      }
+  </script>
   </body>
 </html>

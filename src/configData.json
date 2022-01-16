@@ -43,6 +43,7 @@
         "buttonText": "Resume ?",
         "style": {
           "bgImage": "linear-gradient(90deg, #496D1D, #EEF8E3)",
+          "headerHeight": "65px",
           "titleFontSize": "max(3vw,21px)",
           "subtitleFontSize": "max(2vw,16px)",
           "introTextColor": "#fff",
