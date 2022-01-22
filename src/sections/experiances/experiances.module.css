@@ -47,9 +47,19 @@
 
 .description {
   padding-bottom: 20px;
+  width: 75%;
 }
 .role {
   font-weight: 400;
+  text-align: center;
+}
+
+.period {
+  text-align: center;
+}
+
+.remarks {
+  font-size: max(1.5vw,15px);
 }
 
 @media screen and (max-width: 750px) {

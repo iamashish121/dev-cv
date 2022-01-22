@@ -14,7 +14,7 @@ const renderComponents = () => {
       case 'header': return <Header headerProps={comp.data} key={i}/>
       case 'landing': return <Landing landingProps={comp.data} key={i}/>
       case 'education': return <Education educationProps={comp.data} key={i}/>
-      case 'experiance': return <Experiance experianceProps={comp.data} key={i}/>
+      case 'experience': return <Experiance experianceProps={comp.data} key={i}/>
       case 'skills': return <Skills skillsProps={comp.data} key={i}/>
       case 'publications': return <Publications publicationsProps={comp.data} key={i}/>
       case 'contact': return <Contact contactProps={comp.data} key={i}/>

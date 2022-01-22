@@ -80,14 +80,15 @@
       }
     },
     {
-      "type": "experiance",
+      "type": "experience",
       "data": {
         "experianceData": [
           {
             "logoURI": "https://ik.imagekit.io/devcvV1/dev-cv/Myntra_logo_2_S07JQ2jwp.png?updatedAt=1641637210979",
             "company": "Myntra",
             "role": "Software Engineer",
-            "period": "2020 - Present"
+            "period": "2020 - Present",
+            "remarks": ["Helped in reducing the desktop server load.","Onboarded alerting system which monitors important metrics.","Worked on making mweb Server side rendered.","fixed the critical bugs leading to improved service performance"]
           }
         ],
         "style": {

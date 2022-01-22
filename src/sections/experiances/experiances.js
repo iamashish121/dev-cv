@@ -4,6 +4,16 @@ const Experiance = props => {
 
   const {experianceProps = {}} = props
 
+  const remarksContent = (remarksData) => {
+    return remarksData.map((point, index) => {
+        return (
+          <li key={index}>
+            {point}
+          </li>
+        );
+      })
+  }
+
   const content = experianceProps.experianceData.map((entry,index) => {
     if (window.matchMedia("(max-width: 750px)").matches) {
       return (
@@ -18,7 +28,9 @@ const Experiance = props => {
             </div>
           </div>
           <div className={Styles.description}>
-
+            <ul className={Styles.remarks}>
+              {remarksContent(entry.remarks)}
+            </ul>
           </div>
         </div>
       );
@@ -36,6 +48,9 @@ const Experiance = props => {
             <div className={Styles.period} >
               {entry.period}
             </div>
+            <ul className={Styles.remarks}>
+              {remarksContent(entry.remarks)}
+            </ul>
           </div>
         </div>
       );
