@@ -18,7 +18,7 @@ Currently DEV-CV supports following components.
 7. **Contact** module is basically a footer showing the dev's picture and contact links.
 
 # How to Use
-From your command line, first clone Simplefolio:
+From your command line, first clone dev-cv:
 ```
 # Clone the repository
 $ git clone https://github.com/iamashish121/dev-cv.git
@@ -37,8 +37,8 @@ $ npm build-cv
 # Start the development server
 $ npm start
 ```
-Now modify the file `./src/configData.json` with your details. Full construct of JSON file is mentioned below.
 After the server has started, go to this url  `http://localhost:3000/`  to see the portfolio locally.
+Now modify the file `./src/configData.json` with your details. Full construct of JSON file is mentioned below.
 
 # JSON Structure
 The JSON config mainly contains the `components` array having all the components in the same order as we want them to appear in final webpage.
@@ -79,8 +79,8 @@ Note : remember to use max in font size styling to support responsiveness.
       "type": "landing",
       "data": {
         "heroImage": "https://ik.imagekit.io/devcvV1/dev-cv/heroImage2_1__V1t0pDTOl.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1642150334890",
-        "welcomeText1": "Hi All, I am Ashish ✌️ ",
-        "welcomeText2": "A frontend engineer having experiance in React, React Native, node.js and webpack.",
+        "welcomeText1": "Hi All, I am Name ✌️ ",
+        "welcomeText2": "A frontend engineer ",
         "buttonText": "Resume ?",
         "style": {
           "bgImage": "linear-gradient(90deg, #496D1D, #EEF8E3)",
@@ -129,10 +129,10 @@ Note : remember to use max in font size styling to support responsiveness.
         "experianceData": [
           {
             "logoURI": "https://ik.imagekit.io/devcvV1/dev-cv/Myntra_logo_2_S07JQ2jwp.png?updatedAt=1641637210979",
-            "company": "Myntra",
+            "company": "ABC Company",
             "role": "Software Engineer",
-            "period": "2020 - Present",
-            "remarks": ["Helped in reducing the desktop server load.","Onboarded alerting system which monitors important metrics.","Worked on making mweb Server side rendered.","fixed the critical bugs leading to improved service performance"]
+            "period": "from - to",
+            "remarks": ["Worked on improving ABC", "XYZ"]
           }
         ],
         "style": {
@@ -186,10 +186,10 @@ Note : remember to use max in font size styling to support responsiveness.
       "data": {
         "publicationsData": [
           {
-            "title": "MAP: A Visual Analytics System for Job Monitoring and Analysis",
-            "conference": "IEEE International Conference on Cluster Computing",
-            "year": 2020,
-            "link": "https://ieeexplore.ieee.org/document/9229613"
+            "title": "Paper Title",
+            "conference": "Conference name",
+            "year": year,
+            "link": "link-to-paper-publisher-website"
           }
         ],
         "style": {
