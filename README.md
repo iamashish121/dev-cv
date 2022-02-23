@@ -1,7 +1,7 @@
 # DEV-CV
 
 This is a react project helping you to create your own CV website.
-This project is implemented in a modular fashion expecting users just to update details in on JSON file and your CV page will be ready. With just modifying the JSON file you can update details as well as basic style elements
+This project is implemented in a modular fashion expecting users just to update details in one JSON file and your CV page will be ready. With just modifying the JSON file you can update details as well as basic style elements
 
 Checkout demo website here ->> https://dev-cv.netlify.app/
 
